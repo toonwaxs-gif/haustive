@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haustive | ออกแบบบ้านและสร้างบ้านโมเดิร์นมินิมอล</title>
+<meta name="description" content="Haustive รับออกแบบบ้านโมเดิร์นมินิมอล เลือกได้ว่าจะรับแค่แบบ หรือให้สร้างต่อจนเสร็จ โทร 087-464-1917">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ===== THEME: เปลี่ยนสีทั้งเว็บที่นี่ที่เดียว ===== */
+:root{--bg:#FFFFFF;--bg2:#F1F0EB;--ink:#0D0D0D;--muted:#55554F;--accent:#FFC20E;--red:#D62828;--dark:#0D0D0D;--on-dark:#FFFFFF;--line:#DEDDD6;
+--head:'Bai Jamjuree','IBM Plex Sans Thai',sans-serif;--body:'IBM Plex Sans Thai',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:var(--body);font-weight:300;font-size:17px;line-height:1.8;background:var(--bg);color:var(--ink)}
+a{color:inherit}:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.2}
+.tag{font-family:var(--head);font-weight:700;font-size:14px;background:var(--accent);color:var(--ink);padding:2px 14px;display:inline-block;margin-bottom:16px;border-radius:99px}
+nav.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--head);font-weight:700;font-size:24px;text-decoration:none}
+.links{display:flex;gap:26px;align-items:center;font-size:15px}.links a{text-decoration:none}.links a:hover{color:var(--red)}
+.btn{display:inline-block;padding:12px 26px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:500;border:1px solid var(--ink);cursor:pointer;font:inherit;font-weight:500;transition:.25s;border-radius:99px}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:var(--ink);transform:translateY(-2px)}
+.btn.alt{background:transparent;color:var(--ink)}.btn.alt:hover{color:var(--ink)}
+.hero{padding:80px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(40px,7vw,84px);line-height:1.1;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;background:var(--accent);padding:0 .15em;border-radius:.2em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero p{margin-top:20px;max-width:30em;color:var(--muted);font-size:18px}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.bp{width:100%;height:auto;color:var(--ink)}
+.bp .d{stroke-dasharray:1200;stroke-dashoffset:1200;animation:dr 2.8s .2s ease forwards}.bp .d2{animation-delay:1s}
+@keyframes dr{to{stroke-dashoffset:0}}
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.stat{padding:30px 0;text-align:center}.stat+.stat{border-left:1px solid var(--line)}
+.stat b{display:block;font-family:var(--head);font-size:clamp(34px,5vw,52px);line-height:1.1}
+.stat span{font-size:14px;color:var(--muted)}
+.mq{background:var(--dark);color:var(--on-dark);overflow:hidden;white-space:nowrap;padding:16px 0;font-family:var(--head);font-size:18px}
+.mq div{display:inline-block;animation:mq 30s linear infinite}.mq span{margin:0 28px}.mq i{color:var(--accent);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:96px 0}section h2{font-size:clamp(36px,6vw,68px);line-height:1.1;letter-spacing:-.01em;margin-bottom:16px}
+.lead{max-width:38em;color:var(--muted)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:48px}
+.plan{background:var(--bg2);padding:26px;display:flex;flex-direction:column;gap:12px;transition:.3s;border:2px solid transparent;border-radius:28px}
+.plan:hover{transform:translateY(-6px);border-color:var(--accent)}
+.plan .n{font-family:var(--head);font-weight:700;font-size:15px;color:var(--red)}
+.ph{aspect-ratio:4/3;border-radius:20px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}.ph svg{width:100%;height:auto;color:var(--ink);padding:18px}.ph img{width:100%;height:100%;object-fit:cover;display:block}.go{margin-left:auto;width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:20px;transition:.25s}.plan:hover .go{background:var(--accent);color:var(--ink);transform:rotate(-45deg)}.spec{align-items:center}
+.plan h3{font-size:22px}.plan p{font-size:15px;color:var(--muted);line-height:1.7}
+.spec{display:flex;gap:16px;font-size:14px;border-top:1px solid var(--line);padding-top:12px;margin-top:auto;flex-wrap:wrap}
+.note{margin-top:28px;font-size:14px;color:var(--muted)}
+.dark{background:var(--dark);color:var(--on-dark)}.dark .lead{color:#B9B5A9}
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.path{border:1px solid #4A4943;padding:34px;transition:.3s;border-radius:28px}.path:hover{border-color:var(--accent)}
+.path h3{font-size:26px;margin-bottom:6px}.path .for{color:#B9B5A9;font-size:15px;margin-bottom:18px}
+.path ul{list-style:none;padding:0}.path li{padding:9px 0 9px 26px;border-top:1px solid #3A3934;position:relative;font-size:16px}
+.path li::before{content:"";position:absolute;left:0;top:19px;width:12px;height:2px;background:var(--accent)}
+.path.hl{background:var(--accent);color:var(--ink);border-color:var(--accent)}.path.hl .for{color:#3A3000}.path.hl li{border-color:rgba(0,0,0,.2)}.path.hl li::before{background:var(--ink)}
+.tabs{display:flex;gap:10px;margin:32px 0 8px;flex-wrap:wrap}
+.tabs button{font:inherit;font-weight:500;padding:10px 22px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--ink);color:var(--bg)}
+ol.st{list-style:none;padding:0;display:none;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;margin-top:32px;counter-reset:s}
+ol.st.on{display:grid}
+ol.st li{counter-increment:s;border-top:2px solid var(--ink);padding-top:14px}
+ol.st li::before{content:counter(s,decimal-leading-zero);font-family:var(--head);font-weight:700;color:var(--red);font-size:15px;display:block}
+ol.st b{display:block;font-weight:500;font-size:18px}ol.st li{font-size:15px;color:var(--muted)}ol.st b{color:var(--ink)}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:36px;margin-top:44px}
+.why div{border-left:2px solid var(--accent);padding-left:18px}.why h3{font-size:20px;margin-bottom:6px}.why p{color:#B9B5A9;font-size:15px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.ci p{margin-bottom:14px}.ci small{display:block;color:var(--muted);font-size:13px}
+.soc{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.soc a{border-radius:99px;border:1px solid var(--ink);padding:6px 16px;font-size:14px;text-decoration:none}.soc a:hover{background:var(--ink);color:var(--bg)}
+form{display:grid;gap:14px}label{display:grid;gap:4px;font-size:15px}
+input,select,textarea{font:inherit;padding:11px 12px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:14px}textarea{min-height:100px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:64px}.story:nth-of-type(even) .ph{order:2}.story .ph{aspect-ratio:5/4;border-radius:28px;background:var(--bg2)}.story .big{font-family:var(--head);font-weight:700;font-size:clamp(64px,10vw,120px);line-height:1;color:var(--accent);-webkit-text-stroke:2px var(--ink)}.story h3{font-size:clamp(26px,3.4vw,40px);margin:6px 0 10px}.story p{color:var(--muted);max-width:30em}.fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--red);color:#fff;padding:14px 22px;border-radius:99px;font-weight:500;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);display:flex;gap:10px;align-items:center;transition:.25s;animation:pl 2.4s infinite}.fab:hover{transform:translateY(-3px) scale(1.03)}.fab svg{width:20px;height:20px}@keyframes pl{0%,100%{box-shadow:0 8px 24px rgba(0,0,0,.28),0 0 0 0 rgba(214,40,40,.5)}60%{box-shadow:0 8px 24px rgba(0,0,0,.28),0 0 0 14px rgba(214,40,40,0)}}
+footer{background:var(--dark);color:#B9B5A9;padding:26px 0;font-size:14px}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media(max-width:820px){.hero .wrap,.paths,.contact,.story{grid-template-columns:1fr;gap:24px}.story:nth-of-type(even) .ph{order:0}.links a:not(.btn){display:none}section{padding:68px 0}.stat{padding:20px 4px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.bp .d{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap"><a class="logo" href="#top">Haustive</a>
+<div class="links"><a href="#story">เรื่องราว</a><a href="#plans">แบบบ้าน</a><a href="#services">บริการ</a><a href="#process">ขั้นตอน</a><a href="#contact">ติดต่อ</a><a class="btn" href="https://line.me/R/ti/p/@229ghles" target="_blank" rel="noopener">คุยทาง LINE</a></div></div></nav>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div class="rv"><span class="tag">Haustive Home Studio</span>
+<h1>ออกแบบบ้านให้ใช่ แล้ว<em>เลือกได้</em> ว่าจะให้เราสร้างต่อไหม</h1>
+<p>บ้านโมเดิร์นมินิมอลที่เรียบ อยู่สบาย และเหมาะกับอากาศเมืองไทย รับเฉพาะงานออกแบบ หรือให้เราดูแลต่อจนก่อสร้างเสร็จ ตามที่คุณสะดวก</p>
+<div class="btns"><a class="btn" href="#plans">ดูแบบบ้าน</a><a class="btn alt" href="#services">เลือกรูปแบบบริการ</a></div></div>
+<svg class="bp" viewBox="0 0 520 380" fill="none" stroke="currentColor" stroke-width="2" role="img" aria-label="ภาพร่างแบบบ้านโมเดิร์น">
+<g class="d"><path d="M20 330H500"/><path d="M60 330V170H300V330"/><path d="M44 170H316V154H44Z"/><path d="M300 330V90H430V330"/><path d="M286 90H444V76H286Z"/></g>
+<g class="d d2"><rect x="90" y="200" width="80" height="130"/><rect x="195" y="200" width="80" height="60"/><rect x="330" y="120" width="70" height="60"/><rect x="330" y="215" width="70" height="115"/></g>
+<g stroke="var(--red)" class="d d2"><path d="M20 360H500M20 352V368M500 352V368"/><path d="M470 76V330M462 76H478M462 330H478"/></g></svg>
+</div></div>
+
+<div class="stats"><div class="wrap">
+<div class="stat"><b data-n="4">0</b><span>แบบบ้านต้นแบบ</span></div>
+<div class="stat"><b data-n="2">0</b><span>รูปแบบบริการให้เลือก</span></div>
+<div class="stat"><b data-n="1">0</b><span>ทีมเดียว ตั้งแต่แบบจนส่งมอบ</span></div></div></div>
+
+<div class="mq" aria-hidden="true"><div><span>Modern Minimal</span><i>✦</i><span>ออกแบบบ้าน</span><i>✦</i><span>สร้างบ้าน</span><i>✦</i><span>รีโนเวท</span><i>✦</i><span>Haustive</span><i>✦</i><span>Modern Minimal</span><i>✦</i><span>ออกแบบบ้าน</span><i>✦</i><span>สร้างบ้าน</span><i>✦</i><span>รีโนเวท</span><i>✦</i><span>Haustive</span><i>✦</i></div></div>
+
+<section id="story"><div class="wrap">
+<span class="tag">Our Story</span><h2 class="rv">บ้านที่ดี เริ่มจากการฟัง</h2>
+<p class="lead rv">เรื่องราวของ Haustive ในสามบท (ข้อความร่าง แก้เป็นเรื่องจริงของสตูดิโอได้)</p>
+<div class="story rv"><div class="ph" data-img="images/story-01.jpg" data-alt="แนวคิด Haustive"><svg viewBox="0 0 300 200" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 170H280"/><path d="M60 170V90H200V170"/><path d="M50 90H210V80H50Z"/><rect x="85" y="110" width="50" height="60"/><circle cx="245" cy="60" r="20"/></svg></div>
+<div><span class="big">01</span><h3>ทำไมต้อง Haustive</h3><p>บ้านคือที่ที่เราใช้ชีวิตทุกวัน เราเชื่อว่าบ้านที่ดีไม่ต้องหรูหรา แต่ต้องอยู่สบาย ดูแลง่าย และเหมาะกับคนที่อยู่จริง</p></div></div>
+<div class="story rv"><div class="ph" data-img="images/story-02.jpg" data-alt="การพูดคุยกับลูกค้า"><svg viewBox="0 0 300 200" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="40" y="40" width="220" height="130"/><path d="M40 90H260M120 40V170"/><path d="M150 120H230M150 140H200"/></svg></div>
+<div><span class="big">02</span><h3>เริ่มจากฟัง ก่อนวาด</h3><p>ทุกโครงการเริ่มจากการคุยเรื่องไลฟ์สไตล์ ที่ดิน และงบประมาณ ก่อนลงมือร่างแบบ เพื่อให้บ้านตอบโจทย์ตั้งแต่เส้นแรก</p></div></div>
+<div class="story rv"><div class="ph" data-img="images/story-03.jpg" data-alt="งานก่อสร้าง"><svg viewBox="0 0 300 200" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 175H280"/><path d="M70 175V60H150V175"/><path d="M150 175V100H230V175"/><path d="M40 60H180M130 100H250"/><path d="M215 100V30M215 30H265"/></svg></div>
+<div><span class="big">03</span><h3>ออกแบบแล้วสร้างได้จริง</h3><p>แบบที่เราวาดคิดมาพร้อมวิธีก่อสร้าง คุณเลือกได้ว่าจะรับแค่แบบไปให้ช่างของคุณ หรือให้ Haustive ดูแลต่อจนส่งมอบ</p></div></div>
+</div></section>
+
+<section id="plans"><div class="wrap">
+<span class="tag">Portfolio</span><h2 class="rv">แบบบ้านของ Haustive</h2>
+<p class="lead rv">4 แบบบ้านต้นแบบที่สะท้อนแนวคิดของสตูดิโอ ปรับขนาดและผังให้เข้ากับที่ดินของคุณได้</p>
+<div class="plans">
+<article class="plan rv"><span class="n">แบบ 01</span>
+<div class="ph" data-img="images/plan-01.jpg" data-alt="ซาลา แฟลต"><svg viewBox="0 0 300 160" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 140H290"/><path d="M30 140V70H210V140"/><path d="M18 70H222V60H18Z"/><rect x="50" y="90" width="60" height="50"/><rect x="130" y="90" width="60" height="30"/><path d="M210 140V95H270V140"/><path d="M204 95H276"/></svg></div>
+<h3>ซาลา แฟลต</h3><p>บ้านชั้นเดียวหลังคาแบนชายคายื่น เปิดห้องนั่งเล่นออกสู่สวน ให้ลมผ่านตลอดวัน เหมาะกับครอบครัวที่อยากอยู่ชั้นเดียว</p>
+<div class="spec"><span>3 ห้องนอน</span><span>2 ห้องน้ำ</span><span>~160 ตร.ม.</span><a class="go" href="#contact" data-plan="ซาลา แฟลต" aria-label="ปรึกษาแบบ ซาลา แฟลต">→</a></div></article>
+<article class="plan rv"><span class="n">แบบ 02</span>
+<div class="ph" data-img="images/plan-02.jpg" data-alt="คอร์ท เฮาส์"><svg viewBox="0 0 300 160" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 140H290"/><path d="M20 140V70H100V140"/><path d="M200 140V70H280V140"/><path d="M14 70H106M194 70H286"/><path d="M100 100H200V140"/><circle cx="150" cy="122" r="12"/><path d="M150 134V140"/></svg></div>
+<h3>คอร์ท เฮาส์</h3><p>ปีกบ้านสองฝั่งโอบสวนกลางบ้าน ทุกห้องเห็นต้นไม้และรับลม เหมาะกับที่ดินกว้างและคนรักสีเขียว</p>
+<div class="spec"><span>3 ห้องนอน</span><span>3 ห้องน้ำ</span><span>~200 ตร.ม.</span><a class="go" href="#contact" data-plan="คอร์ท เฮาส์" aria-label="ปรึกษาแบบ คอร์ท เฮาส์">→</a></div></article>
+<article class="plan rv"><span class="n">แบบ 03</span>
+<div class="ph" data-img="images/plan-03.jpg" data-alt="สลิม ไลน์"><svg viewBox="0 0 300 160" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 148H290"/><path d="M80 148V20H200V148"/><path d="M70 20H210V12H70Z"/><path d="M80 80H200"/><rect x="98" y="34" width="40" height="34"/><rect x="152" y="34" width="34" height="34"/><rect x="98" y="96" width="88" height="52"/></svg></div>
+<h3>สลิม ไลน์</h3><p>บ้านสองชั้นสำหรับที่ดินหน้าแคบ ดึงแสงลงผ่านช่องบันไดโปร่ง ใช้พื้นที่ทุกตารางเมตรให้คุ้มที่สุด</p>
+<div class="spec"><span>4 ห้องนอน</span><span>3 ห้องน้ำ</span><span>~220 ตร.ม.</span><a class="go" href="#contact" data-plan="สลิม ไลน์" aria-label="ปรึกษาแบบ สลิม ไลน์">→</a></div></article>
+<article class="plan rv"><span class="n">แบบ 04</span>
+<div class="ph" data-img="images/plan-04.jpg" data-alt="การ์เดน ลอฟต์"><svg viewBox="0 0 300 160" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 148H290"/><path d="M40 148V50H240V148"/><path d="M30 50H250V40H30Z"/><path d="M40 90H130V148" stroke-dasharray="5 5"/><rect x="60" y="62" width="60" height="70"/><rect x="150" y="62" width="70" height="30"/><path d="M240 148V110H280V148"/></svg></div>
+<h3>การ์เดน ลอฟต์</h3><p>ห้องนั่งเล่นเพดานสูงสองชั้นเปิดรับแสงธรรมชาติ ชั้นบนเป็นโถงลอยมองลงมาเห็นสวน</p>
+<div class="spec"><span>3 ห้องนอน</span><span>3 ห้องน้ำ</span><span>~190 ตร.ม.</span><a class="go" href="#contact" data-plan="การ์เดน ลอฟต์" aria-label="ปรึกษาแบบ การ์เดน ลอฟต์">→</a></div></article>
+</div>
+<p class="note">แบบทั้งหมดเป็นแบบต้นแบบเพื่อนำเสนอแนวคิด ขนาดและรายละเอียดปรับตามที่ดินและงบประมาณของแต่ละโครงการ</p>
+</div></section>
+
+<section id="services" class="dark"><div class="wrap">
+<span class="tag">Services</span><h2 class="rv">เลือกให้เหมาะกับคุณ</h2>
+<p class="lead rv">ลูกค้าเลือกได้เองว่าจะรับแค่งานออกแบบ หรือให้ Haustive สร้างต่อจนส่งมอบ</p>
+<div class="paths">
+<div class="path rv"><h3>ออกแบบอย่างเดียว</h3><p class="for">เหมาะกับคนที่มีช่างหรือผู้รับเหมาอยู่แล้ว</p>
+<ul><li>ผังบ้านและรูปด้าน พร้อมภาพ 3 มิติ</li><li>แบบก่อสร้างครบชุด</li><li>แบบสำหรับยื่นขออนุญาต</li><li>รายการวัสดุเบื้องต้น</li></ul></div>
+<div class="path hl rv"><h3>ออกแบบ + ก่อสร้าง</h3><p class="for">เหมาะกับคนที่อยากให้ทีมเดียวดูแลจนจบ</p>
+<ul><li>ทุกอย่างในแพ็กเกจออกแบบ</li><li>ประเมินราคาและสัญญาก่อสร้าง</li><li>ควบคุมงานและตรวจงานเป็นงวด</li><li>ส่งมอบบ้านพร้อมอยู่</li></ul></div>
+</div>
+<div class="why">
+<div class="rv"><h3>เรียบแต่อยู่สบาย</h3><p>ออกแบบให้ลมผ่าน แสงเข้า และกันแดดฝนได้จริง</p></div>
+<div class="rv"><h3>งบชัดตั้งแต่ต้น</h3><p>แจกแจงรายการและราคาก่อนตัดสินใจ</p></div>
+<div class="rv"><h3>เปลี่ยนใจได้ระหว่างทาง</h3><p>เริ่มจากงานแบบก่อน แล้วค่อยต่อยอดเป็นงานสร้างได้</p></div></div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<span class="tag">Process</span><h2 class="rv">ขั้นตอนการทำงาน</h2>
+<p class="lead rv">เลือกดูขั้นตอนตามรูปแบบบริการที่คุณสนใจ</p>
+<div class="tabs" role="tablist">
+<button role="tab" aria-selected="true" data-t="a">ออกแบบอย่างเดียว</button>
+<button role="tab" aria-selected="false" data-t="b">ออกแบบ + ก่อสร้าง</button></div>
+<ol class="st on" id="a">
+<li><b>ปรึกษาเบื้องต้น</b>คุยความต้องการ งบ และข้อมูลที่ดิน</li>
+<li><b>ร่างแนวคิด</b>เสนอผังและภาพ 3 มิติให้ปรับแก้</li>
+<li><b>พัฒนาแบบ</b>ทำแบบก่อสร้างและแบบขออนุญาต</li>
+<li><b>ส่งมอบแบบ</b>ส่งไฟล์และชุดแบบพร้อมนำไปก่อสร้าง</li></ol>
+<ol class="st" id="b">
+<li><b>ปรึกษาเบื้องต้น</b>คุยความต้องการ งบ และข้อมูลที่ดิน</li>
+<li><b>ร่างและพัฒนาแบบ</b>ผัง ภาพ 3 มิติ และแบบก่อสร้าง</li>
+<li><b>ประเมินราคา</b>สรุปรายการวัสดุ ราคา และระยะเวลา</li>
+<li><b>ทำสัญญา</b>ตกลงขอบเขตงานและงวดงานให้ชัดเจน</li>
+<li><b>ก่อสร้าง</b>ควบคุมงานและตรวจรับเป็นงวด</li>
+<li><b>ส่งมอบบ้าน</b>ตรวจความเรียบร้อยก่อนเข้าอยู่</li></ol>
+</div></section>
+
+<section id="contact" class="band" style="background:var(--bg2)"><div class="wrap contact">
+<div class="ci"><span class="tag">Contact</span><h2>คุยเรื่องบ้านกับเรา</h2>
+<p class="lead">บอกขนาดที่ดินและงบคร่าว ๆ ทีมงานจะติดต่อกลับ</p><br>
+<p><small>โทรศัพท์</small><a href="tel:0874641917">087-464-1917</a> / <a href="tel:0944955595">094-495-5595</a></p>
+<p><small>LINE Official Account</small><a href="https://line.me/R/ti/p/@229ghles" target="_blank" rel="noopener">@229ghles</a></p>
+<p><small>อีเมล</small>Haustive229</p>
+<p><small>สถานที่ตั้งสตูดิโอ</small>1214</p>
+<div class="soc"><a href="https://www.facebook.com/PagesHaustive" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/PagesHaustive" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@PagesHaustive" target="_blank" rel="noopener">TikTok</a></div></div>
+<form id="f">
+<label>ชื่อ<input name="n" required></label>
+<label>เบอร์โทร<input name="p" type="tel" required></label>
+<label>สนใจบริการ<select name="s"><option>ออกแบบอย่างเดียว</option><option>ออกแบบ + ก่อสร้าง</option><option>ยังไม่แน่ใจ</option></select></label>
+<label>รายละเอียด<textarea name="m" placeholder="ขนาดที่ดิน งบประมาณ จำนวนห้องนอน"></textarea></label>
+<button class="btn" type="submit">ส่งข้อความทาง LINE</button></form>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Haustive สงวนลิขสิทธิ์ | 087-464-1917 | LINE @229ghles</div></footer>
+
+<a class="fab" href="https://line.me/R/ti/p/@229ghles" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>แชทกับเรา</a>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);
+var el=e.target,t=+el.dataset.n,s=null;(function f(ts){s=s||ts;var p=Math.min((ts-s)/1200,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(performance.now())})},{threshold:.6});
+document.querySelectorAll('[data-n]').forEach(function(el){co.observe(el)});
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){
+document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected',x===b)});
+document.querySelectorAll('ol.st').forEach(function(o){o.classList.toggle('on',o.id===b.dataset.t)})})});
+document.querySelectorAll('.ph[data-img]').forEach(function(b){var i=new Image();i.onload=function(){b.innerHTML='';b.appendChild(i)};i.alt=b.dataset.alt||'';i.src=b.dataset.img});
+document.querySelectorAll('.go').forEach(function(a){a.addEventListener('click',function(){document.querySelector('[name=m]').value='สนใจแบบ: '+a.dataset.plan})});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var d=new FormData(this);
+var t='สนใจบริการ: '+d.get('s')+'\nชื่อ: '+d.get('n')+'\nเบอร์โทร: '+d.get('p')+'\n'+d.get('m');
+window.open('https://line.me/R/oaMessage/@229ghles/?'+encodeURIComponent(t),'_blank')});
+</script>
+</body>
+</html>
